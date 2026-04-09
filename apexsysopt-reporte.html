@@ -400,7 +400,7 @@ canvas.gauge-canvas { display: block; margin: 0 auto; }
       <div class="mod-item">
         <div class="mod-emoji">🧹</div>
         <div class="mod-info">
-          <div class="mod-name">CCleaner</div>
+          <div class="mod-name">Limpieza General</div>
           <div class="mod-desc" id="ccDesc">Archivos temporales y basura del sistema eliminados</div>
         </div>
         <div class="mod-gain-badge" id="ccGain">--</div>
@@ -409,7 +409,7 @@ canvas.gauge-canvas { display: block; margin: 0 auto; }
       <div class="mod-item">
         <div class="mod-emoji">🗑️</div>
         <div class="mod-info">
-          <div class="mod-name">BleachBit</div>
+          <div class="mod-name">Limpieza de Caché</div>
           <div class="mod-desc" id="bbDesc">Caché del sistema, DNS y logs eliminados</div>
         </div>
         <div class="mod-gain-badge" id="bbGain">--</div>
@@ -418,8 +418,8 @@ canvas.gauge-canvas { display: block; margin: 0 auto; }
       <div class="mod-item">
         <div class="mod-emoji">🚀</div>
         <div class="mod-info">
-          <div class="mod-name">Autoruns</div>
-          <div class="mod-desc" id="arDesc">Servicios de inicio optimizados</div>
+          <div class="mod-name">Optimización de Arranque</div>
+          <div class="mod-desc" id="arDesc">Servicios de inicio innecesarios desactivados</div>
         </div>
         <div class="mod-gain-badge" id="arGain">--</div>
         <div class="mod-check">✓</div>
@@ -485,7 +485,7 @@ const now = new Date();
 const dateStr = now.toLocaleDateString('es-AR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});
 const nextDate = new Date(now);
 nextDate.setMonth(nextDate.getMonth()+6);
-const nextStr = nextDate.toLocaleDateString('es-AR',{month:'long',year:'numeric'});
+const nextStr = nextDate.toLocaleDateString('es-AR',{day:'2-digit',month:'long',year:'numeric'});
 
 document.getElementById('reportCode').textContent = code;
 document.getElementById('reportDate').textContent = dateStr.toUpperCase();
